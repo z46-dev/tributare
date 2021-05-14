@@ -59,7 +59,7 @@ async function messageEvent(message) {
     if (!message.content.startsWith(config.prefix)) return;
     if (message.author.bot) return;
     let args = message.content.split(" ");
-    let command = args.shift().slice(1);
+    let command = args.shift().slice(config.prefix.length);
     if (commands[command]) return commands[command].run(bot, message, args);
     util.error(message, "That command doesn't exist!");
 };
