@@ -14,7 +14,7 @@ bot.on("ready", async function() {
 
     // Now we log that we started up in our logs channel.
     util.log(bot, config.channels.statusLogs, "Discord bot active.");
-    require("./lib/slashCommands.js.js")(bot);
+    require("./lib/slashCommands.js")(bot);
 });
 
 // We use folders for our commands so that it is all simple and split up.
