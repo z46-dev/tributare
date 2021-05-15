@@ -12,7 +12,6 @@ const config = require("./config.json");
  * @param {string} title The title of the embed.
  * @param {number} color The color of the embed.
  * @param {string} description The description of the embed.
- * @param {Array<string>} footer Both parameters of the footer.
  * @returns {Discord.MessageEmbed} The embed generated
  * @author Sopur
  * I was too lazy to improve the other files
